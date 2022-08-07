@@ -1,36 +1,46 @@
 /*
 
 Problem Statement
-After the decimation, all world went into chaos. People had to rebuild the planet so Shield came up with a donation strategy. 
-They feel all the rich guys need to donate more than the poor guys. So, they make a rule. They would make a donation list 
-in which the donation of each person would be shown. But the rule is that a person can’t pay less than what has already been 
-paid before them. Find the extra amount each person will pay, and also, tell shield the total amount of donation.
+Given an array A of size N, you need to find its maximum, 2nd maximum and 3rd maximum element.
+
+Try solving it in O(N) per test case
 Input
-The first line contains n, the total number of people donating. The next line contains n space separated integers denoting 
-the amount of money paid by the people. The amounts are mentioned in the order in which the people paid.
+The first line of the input contains the number of test cases T.
 
-Constraints:-
-1 <= n <= 100000
-0 <= money <= 100000
+For each test case, the first line of the input contains an integer N denoting the number of elements in the array A. The next line contains 
+N (space separated) elements of A.
+
+
+Constraints:
+1 <= T <= 100
+3 <= N <= 10^6
+1 <= A[i] <= 10^9
+
+Note:-It is guaranteed that the sum of N over all text cases does not exceed 10^6
 Output
-The first line contains the extra money that each student has to pay after their teacher applied the rule. The second line 
-contains the total amount collected by the teacher at the end.
+For each test case, output the first, second and third maximum elements in the array.
 Example
-Sample Input:-
-10
-1 2 3 2 4 3 6 6 7 6
-
-Sample Output:-
-0 0 0 1 0 1 0 0 0 1
-43
-
-Sample Input:-
+Sample Input:
+3
+5
+1 4 2 4 5
+6
+1 3 5 7 9 8
 7
-10 20 30 40 30 20 10
+11 22 33 44 55 66 77
 
-Sample Output:-
-0 0 0 0 10 20 30
-220
+Sample Output:
+5 4 4
+9 8 7
+77 66 55
+
+Explanation(might now be the optimal solution):
+Testcase 1:
+[1 4 2 4 5]
+First max = 5
+Second max = 4
+Third max = 4
+
 
 */
 
