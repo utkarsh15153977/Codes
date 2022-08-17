@@ -30,27 +30,22 @@ Sample Output:-
 
 */
 
-
 import java.util.Scanner;
 import java.lang.*;
 
-
-public class PannyAndCharity {
-    public int Carity(int N, int M){
-        /*if(N > 2*M){
-            return -1;
+public class PokemonMaster {
+    public int PokemonMaster(int A, int B){
+        if(A >= B){
+            return 1;
         }
-        return M/N;*/
-        if(M/N>1)
-            return M/N;
-        else return -1;
+        else return 0;
     }
     public static void main(String [] args){
         Scanner sc = new Scanner(System.in);
-        PannyAndCharity pc = new PannyAndCharity();
-        int N = sc.nextInt();
-        int M = sc.nextInt();
-        int ans  = pc.Carity(N ,M);
+        int A = sc.nextInt();
+        int B = sc.nextInt();
+        PokemonMaster pm = new PokemonMaster();
+        int ans = pm.PokemonMaster(A,B);
         System.out.println(ans);
     }
 }
